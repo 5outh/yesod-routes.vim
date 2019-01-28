@@ -15,9 +15,11 @@ endif
 syn keyword yesodRoutesMethod DELETE GET PATCH POST PUT
 syn match yesodRoutesRoute "\C\v\/[A-Za-z0-9#*+/.-]*"
 syn match yesodRoutesResource "\C\v[A-Z]{1}.*R "
+syn match yesodRoutesGroup "\C\v[A-Z]{1}.*P "
 
 highlight def link yesodRoutesMethod Keyword
 highlight def link yesodRoutesRoute String
 highlight def link yesodRoutesResource Identifier
+highlight def link yesodRoutesGroup Function
 
 let b:current_syntax = "yesod"
