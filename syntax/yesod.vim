@@ -13,10 +13,10 @@ endif
 
 " Routes
 syn keyword yesodRoutesMethod DELETE GET PATCH POST PUT
-syn match yesodRoutesRoutePiece "\C\v[A-Za-z0-9-.*_]*"
-syn match yesodRoutesResource "[A-Z]\C\v[A-Z]{1}.* "
+syn match yesodRoutesRoutePiece "\/\C\v[A-Za-z0-9-.*_]*"
+syn match yesodRoutesResource "\s[A-Z][A-Za-z0-9_]*\s"
 syn match yesodRoutesGroup "\C\v[A-Z]{1}.*P:"
-syn match yesodRoutesParameter "/#\C\v[A-Z]{1}"
+syn match yesodRoutesParameter "#[A-Z][A-Za-z0-9_]*"
 syn match yesodRoutesComment "--.*"
 
 highlight def link yesodRoutesMethod Label
