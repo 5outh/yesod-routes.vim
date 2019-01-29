@@ -10,7 +10,7 @@
 
 /profile ProfileR GET
 
-/searchThing/#id SearchR GET
+/searchThing/#ThingId SearchR GET
 
 /does/not/exists DoesNotExistsR POST
 
