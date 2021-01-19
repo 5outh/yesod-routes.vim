@@ -2,14 +2,13 @@
 " Language:             Haskell Yesod web framework
 " Maintainer:           Benjamin Kovach <bkovach13@gmail.com>
 " License:              Vim (see :h license)
-" Repository:           https://github.com/5outh/vim-yesod
+" Repository:           https://github.com/5outh/yesod-routes.vim
 
 if version < 600
   syn clear
 elseif exists("b:current_syntax")
   finish
 endif
-
 
 syn match yesodRoutesRoutePiece "\/\C\v[A-Za-z0-9-.*_]*"
 syn match yesodRoutesResource "\s[A-Z][A-Za-z0-9_]*\s"
