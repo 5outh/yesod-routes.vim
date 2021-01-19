@@ -6,15 +6,19 @@ Vim plugin for syntax-highlighting of [Yesod](http://www.yesodweb.com/) routes f
 
 Compatible with `Vundle`, `Pathogen`, `Vim-plug`.
 
-## Usage
+## Yesod Routes Highlighting
 
-Open `config/routes`. If you are using a `routes` file in a different location:
+Open `config/routes` or `*.yesodroutes`. If you are using a `routes` file in a different location:
 
 ```vim
 :set filetype=yesod
 ```
 
 in `vim` will set the proper syntax highlighting.
+
+## Persistent Models File Highlighting
+
+`config/models`, `config/models/*` and `*.persistentmodels` files are highlighted under the file type `persistent`.
 
 ## Note
 
